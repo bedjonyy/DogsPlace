@@ -9,10 +9,7 @@ An e-commerce web application for a small ceramics studio specialising in handma
 - [Overview](#overview)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Design System](#design-system)
-- [Pages & Features](#pages--features)
 - [Getting Started](#getting-started)
-- [Shopify Integration](#shopify-integration)
 - [Testing](#testing)
 - [Scripts](#scripts)
 
