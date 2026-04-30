@@ -1,15 +1,6 @@
 /**
  * HeroSection — full-screen slider with 3 slides.
  *
- * Slide backgrounds are render functions (not JSX stored in a data array)
- * so the data stays serializable and React creates fresh elements each render.
- * Slide metadata (text, CTAs) stays in the SLIDES constant.
- *
- * Slider mechanics:
- *   - Auto-advances every 5 s via setInterval.
- *   - Hovering pauses; mouse-leave resumes.
- *   - Arrow buttons and dot indicators navigate and reset the timer.
- *   - AnimatePresence cross-fades backgrounds and lifts text in/out.
  */
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { Link } from 'react-router-dom'

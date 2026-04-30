@@ -13,7 +13,7 @@ export function AboutSection() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <h2 className="font-display text-4xl md:text-5xl font-normal text-ceramic-950 mb-4">
-            Our founder story.
+            About Our Story.
           </h2>
           <p
             className="font-handwritten text-lg text-ceramic-600 leading-relaxed mb-8 italic max-w-sm"

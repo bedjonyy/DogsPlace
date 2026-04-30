@@ -4,8 +4,8 @@ import { Mail, Clock } from 'lucide-react'
 import toast from 'react-hot-toast'
 
 const CONTACT_DETAILS = {
-  studio: 'DOGSPLACE STUDIO, UNIT 1, CERAMIC QUARTER,\nYOUR CITY, CF37 1LT, UK',
-  instagram: '@dogsplacestudio',
+  studio: 'DOGSPLACE STUDIO, UNIT 1, SUN QUARTER,\nYOUR CITY, CF37 1LT, CASCAIS, PORTUGAL',
+  instagram: '@dogsplaces',
   email: 'hello@dogsplace.com',
   hours: 'MON – FRI',
 }
@@ -80,7 +80,7 @@ export function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Welcome to
+            
           </motion.p>
           <motion.h1
             id="contact-hero-heading"
@@ -90,7 +90,7 @@ export function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
           >
-            Contact
+            Contact Us
           </motion.h1>
           <motion.p
             className="font-handwritten italic text-white/80 max-w-lg"
@@ -99,7 +99,7 @@ export function ContactPage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.55, duration: 0.6 }}
           >
-            You can contact us using our chat system or pop us an email and we will get back to you within our opening times.
+            You can contact us using our  email and we will get back to you within our opening times.
           </motion.p>
         </div>
       </section>
@@ -156,7 +156,7 @@ export function ContactPage() {
 
           {/* Right — image placeholder */}
           <motion.div
-            className="aspect-[4/5] rounded-sm overflow-hidden"
+            className="aspect-[10/9] rounded-sm overflow-hidden"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

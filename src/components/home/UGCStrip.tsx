@@ -1,13 +1,6 @@
 /**
  * UGCStrip — infinite auto-scrolling customer photo strip.
  *
- * Structure:
- *   1. Announcement marquee — "THANK YOU SO MUCH FOR SHARING" text ticker.
- *   2. Photo strip — cards at exactly 180 × 319.84 px scroll right-to-left forever.
- *
- * Both layers use pure CSS animation (animation-play-state: running) — no JS
- * timers, no React state. The track renders each array twice so the -50%
- * translateX loops back to an identical start position with no gap.
  */
 
 const ANNOUNCEMENT = 'THANK YOU SO MUCH FOR SHARING 😅 ✨'

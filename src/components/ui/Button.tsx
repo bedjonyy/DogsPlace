@@ -1,16 +1,6 @@
 /**
  * Button — shared CTA component used throughout the storefront.
  *
- * Four variants map to the design system:
- *   dark    → primary action (black fill, white text) — "Add to Cart", "Custom"
- *   light   → overlaid on dark images (white/glass fill) — hero secondary CTA
- *   ghost   → neutral outline for non-destructive actions
- *   outline → inverted on white — "Find Out More", "View Product"
- *
- * No border-radius is applied anywhere — all buttons are square-cornered to
- * match the ceramic brand's raw, no-frills aesthetic.
- *
- * Uses forwardRef so parent components can attach a ref (e.g. for focus management).
  */
 import { type ButtonHTMLAttributes, forwardRef } from 'react'
 import { cn } from '../../lib/utils'

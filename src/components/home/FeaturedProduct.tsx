@@ -68,7 +68,7 @@ export function FeaturedProduct() {
             <p className="font-display text-2xl text-ceramic-500 mb-1">Dog Bowl</p>
           )}
           {product.customizable && (
-            <p className="font-display text-2xl text-ceramic-500 mb-4">Custom Pet Trinket</p>
+            <p className="font-display text-2xl text-ceramic-500 mb-4">Custom Pet Bowl</p>
           )}
 
           <p className="text-lg font-medium text-ceramic-950 mb-3">

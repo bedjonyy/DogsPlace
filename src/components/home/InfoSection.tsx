@@ -42,7 +42,7 @@ export function InfoSection() {
             to="/idea-hub"
             className="inline-block border border-ceramic-950 px-6 py-2.5 text-[10px] tracking-[0.2em] uppercase text-ceramic-950 hover:bg-ceramic-950 hover:text-white transition-colors"
           >
-            Click Me
+            Click Here
           </Link>
         </motion.div>
       </div>

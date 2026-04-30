@@ -112,22 +112,20 @@ export function AboutPage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-display text-4xl md:text-5xl font-normal text-ceramic-950 leading-tight mb-4">
-              Make your dream bowl.
+              Our Story
             </h2>
             <p className="font-handwritten italic text-lg text-ceramic-600 leading-relaxed mb-8">
-              Use our options to build your new fave bowl.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+              Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+              In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+              Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
             </p>
-            <Link
-              to="/customise"
-              className="inline-block bg-ceramic-950 text-ceramic-50 px-6 py-3 text-[10px] tracking-[0.25em] uppercase hover:bg-ceramic-800 transition-colors"
-            >
-              Shop Now
-            </Link>
           </motion.div>
 
           {/* Right — studio shelves placeholder */}
           <motion.div
-            className="relative aspect-[3/4] overflow-hidden rounded-sm"
+            className="relative aspect-[10/9] overflow-hidden rounded-sm"
             initial={{ opacity: 0, x: 24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

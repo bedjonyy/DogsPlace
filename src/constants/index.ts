@@ -1,12 +1,6 @@
 /**
  * Static application data — products, categories, FAQs, testimonials, nav links.
  *
- * In production these arrays are replaced by Shopify Storefront API responses.
- * The shape of each object mirrors the Shopify Product/Metafield schema so the
- * UI components need no changes when the data source is swapped.
- *
- * bgClass on each product is a Tailwind class used as the image placeholder.
- * When real Shopify product images are wired up, bgClass can be removed.
  */
 import type { Product, Category, FAQItem, Testimonial } from '../types'
 
@@ -25,7 +19,7 @@ export const PRODUCTS: Product[] = [
     category: 'dog-bowl',
     price: 41.95,
     currency: 'EUR',
-    description: 'Handmade custom pet bowl. Select your gems and personalise the text. ONE SIZE Width 44cm, Height 5cm, Circ 47cm',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. ONE SIZE Width 44cm, Height 5cm, Circ 47cm',
     details: 'Each bowl is individually hand-thrown and hand-painted. Allow 4–6 weeks for production.',
     variants: [
       { id: 'inscription', name: 'Inscription', type: 'inscription', options: [] },
@@ -43,10 +37,11 @@ export const PRODUCTS: Product[] = [
     category: 'dog-bowl',
     price: 32.00,
     currency: 'EUR',
-    description: 'A timeless handmade ceramic bowl with a hand-stamped paw print motif. Ready to ship.',
-    details: 'Dishwasher safe. Width 38cm, Height 4.5cm.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Ready to ship.',
+    details: 'Lorem ipsum dolor sit amet. Width 38cm, Height 4.5cm.',
     variants: [
       { id: 'size', name: 'Size', type: 'size', options: ['Small', 'Medium', 'Large'] },
+      
     ],
     isNew: false,
     inStock: true,
@@ -55,15 +50,16 @@ export const PRODUCTS: Product[] = [
     bgClass: 'bg-ceramic-100',
   },
   {
-    id: 'pet-trinket',
-    name: 'Custom Pet Trinket',
-    category: 'trinket',
+    id: 'pet-bowl-with-gem',
+    name: 'Custom Pet Bowl',
+    category: 'dog-bowl',
     price: 22.50,
     currency: 'EUR',
-    description: 'A miniature ceramic trinket dish with your pet\'s name. Perfect as a gift.',
+    description: 'Lorem ipsum dolor sit amet your pet\'s name. Perfect as a gift.',
     details: 'Handmade. Approx 8cm diameter.',
     variants: [
       { id: 'inscription', name: 'Inscription', type: 'inscription', options: [] },
+      { id: 'gem', name: 'Gem Detail', type: 'gem', options: ['None', 'Pearl', 'Ruby', 'Sapphire', 'Emerald'] },
     ],
     isNew: false,
     inStock: true,
@@ -77,8 +73,8 @@ export const PRODUCTS: Product[] = [
     category: 'dog-bowl',
     price: 38.00,
     currency: 'EUR',
-    description: 'A sculptural wavy-rim bowl, hand-shaped for a one-of-a-kind look. Ready to ship.',
-    details: 'Each piece varies slightly. Width 40cm, Height 5cm.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Ready to ship.',
+    details: 'Ad litora torquent per conubia nostra inceptos himenaeos. Width 40cm, Height 5cm.',
     variants: [
       { id: 'size', name: 'Size', type: 'size', options: ['Medium', 'Large'] },
     ],
@@ -92,17 +88,17 @@ export const PRODUCTS: Product[] = [
 
 export const CATEGORIES: Category[] = [
   {
-    id: 'idea-hub',
-    title: 'THE IDEA HUB',
+    id: 'vision-hub',
+    title: 'THE VISION HUB',
     label: 'Everything you need to know',
     cta: 'LEMME SEE',
-    ctaLink: '/idea-hub',
+    ctaLink: '/vision-hub',
     bgClass: 'bg-ceramic-600',
     textColor: 'text-white',
   },
   {
-    id: 'pet-drop',
-    title: 'PET DROP',
+    id: 'new-drop',
+    title: 'NEW DROP',
     label: 'Get making',
     cta: 'SHOP NOW',
     ctaLink: '/ready-to-ship',
@@ -114,13 +110,13 @@ export const CATEGORIES: Category[] = [
     title: 'BOWL MUSE',
     label: 'Find your next naetive',
     cta: 'LOOK HERE',
-    ctaLink: '/idea-hub',
+    ctaLink: '/vision-hub',
     bgClass: 'bg-ceramic-500',
     textColor: 'text-white',
   },
   {
-    id: 'paint-your-own',
-    title: 'PAINT YOUR OWN',
+    id: 'create-your-own',
+    title: 'CREATE YOUR OWN',
     label: 'Get creative',
     cta: 'BUY NOW',
     ctaLink: '/clay-dates',
@@ -132,27 +128,27 @@ export const CATEGORIES: Category[] = [
 export const FAQS: FAQItem[] = [
   {
     question: 'What can you make me?',
-    answer: 'We specialise in handmade ceramic dog bowls and pet accessories. We can customise with your pet\'s name, paw prints, gem details, and more.',
+    answer: 'Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere with your pet\'s name, paw prints, gem details, and more.',
   },
   {
     question: 'What are the sizes that you offer?',
-    answer: 'Our bowls come in Small (suitable for cats and small dogs), Medium (for medium breeds), and Large (for large breeds). Custom sizes are also available on request.',
+    answer: 'Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Custom sizes are also available on request.',
   },
   {
     question: 'I have an idea but can\'t see it here.',
-    answer: 'We love a bespoke brief! Reach out via our contact page and we\'ll work with you to bring your vision to life.',
+    answer: 'Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
   },
   {
     question: 'How often do you restock?',
-    answer: 'Ready-to-ship items are restocked every few weeks. Sign up to our newsletter to be the first to know about new drops.',
+    answer: 'Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
   },
   {
     question: 'How do we customise?',
-    answer: 'Simply select the customise option on any product, enter your pet\'s name and any other personalisation details, and we\'ll hand-paint it just for you.',
+    answer: 'Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
   },
   {
     question: 'I need more information.',
-    answer: 'Drop us an email or use our contact form. We aim to reply within 24 hours and are happy to help with any questions.',
+    answer: 'Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.',
   },
 ]
 

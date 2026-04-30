@@ -1,16 +1,6 @@
 /**
  * Accordion — accessible expand/collapse used in FAQSection.
  *
- * Behaviour:
- *   - Only one item open at a time (openIndex tracks which one).
- *   - Clicking an open item closes it (toggle: openIndex === i ? null : i).
- *   - AnimatePresence + motion.div provides a height animation without needing
- *     a fixed height — Framer Motion can animate to "auto" height.
- *   - aria-expanded on the trigger button communicates open/close state to
- *     screen readers without relying on visual cues alone.
- *
- * AccordionRow is kept private (not exported) because it is only meaningful
- * inside the Accordion composition.
  */
 import { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'

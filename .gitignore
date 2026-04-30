@@ -64,7 +64,6 @@ lerna-debug.log*
 .vitest-ui/
 
 #NPM TEST
-__tests__/
 test/
 
 .cla

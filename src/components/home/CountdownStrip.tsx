@@ -26,10 +26,10 @@ export function CountdownStrip() {
         {/* Left */}
         <div>
           <p className="text-[10px] tracking-[0.25em] uppercase text-ceramic-500 mb-2">
-            They&apos;re here, but not for long.
+            They&apos;re here, exclusives but not for long.
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-normal text-ceramic-950 mb-5">
-            Pet Bowls &amp; Trinkets 48 hours only
+            Pet Bowls &amp; Exclusives 48 hours only
           </h2>
           <Link
             to="/ready-to-ship"

@@ -1,15 +1,6 @@
 /**
  * Testimonials — rotating handwritten quotes with brand logo row.
  *
- * Auto-advance:
- *   Quotes rotate every 5 s via setInterval. Clicking a dot or arrow stops the
- *   current timer and starts a fresh one so the slide doesn't immediately skip
- *   after a manual navigation.
- *
- * Hover pauses: mousing over the quote area clears the interval and restores it
- *   on mouse-leave, giving readers time to finish long quotes.
- *
- * Brand logos sit below the quote in a static row — they never animate.
  */
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'

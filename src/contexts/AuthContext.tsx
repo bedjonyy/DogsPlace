@@ -1,15 +1,6 @@
 /**
  * AuthContext — user authentication state.
  *
- * Currently uses simulated async delays to mimic network latency.
- * Every method contains a "Shopify ... integration point" comment showing
- * exactly which Storefront API mutation to call in production.
- *
- * To connect to a real Shopify store:
- *   1. Add VITE_SHOPIFY_STORE_DOMAIN and VITE_SHOPIFY_STOREFRONT_TOKEN to .env.local
- *   2. Replace the setTimeout stubs below with fetch() calls to the Storefront API
- *   3. Persist the returned customerAccessToken in localStorage or a cookie
- *      so the user stays logged in across page reloads
  */
 import { createContext, useContext, useState, type ReactNode } from 'react'
 import type { User } from '../types'

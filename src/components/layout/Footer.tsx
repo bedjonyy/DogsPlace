@@ -6,25 +6,22 @@ import toast from 'react-hot-toast'
 const SHOP_LINKS = [
   { label: 'custom bowls', href: '/customise' },
   { label: 'in stock', href: '/ready-to-ship' },
-  { label: 'bespoke', href: '/customise' },
-  { label: 'get notified', href: '/signup' },
 ]
 
 const HELPFUL_LINKS = [
   { label: 'FAQ', href: '/#faq' },
   { label: 'Contact Us', href: '/contact' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Returns Policy', href: '/returns' },
-  { label: 'Feedback', href: '/feedback' },
+  { label: 'Terms of Service', href: '/#terms' },
+  { label: 'Privacy Policy', href: '/#privacy' },
+  { label: 'Returns Policy', href: '/#returns' },
+  { label: 'Feedback', href: '/#feedback' },
 ]
 
 const LEARN_LINKS = [
-  { label: 'How it Works', href: '/idea-hub' },
   { label: 'About Us', href: '/about' },
-  { label: 'How To Customise', href: '/idea-hub' },
+  { label: 'How To Customise', href: '/vision-hub' },
   { label: 'Reviews', href: '/#testimonials' },
-  { label: 'Track Your Custom Order', href: '/track' },
+  { label: 'Track Your Custom Order', href: '/#track' },
 ]
 
 export function Footer() {
@@ -121,7 +118,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-ceramic-100 flex flex-col md:flex-row items-center justify-between gap-3">
           <span className="font-display text-lg text-ceramic-950">dogsplace.</span>
-          <p className="text-xs text-ceramic-500">© {new Date().getFullYear()} dogsplace. All rights reserved.</p>
+          <p className="text-xs text-ceramic-500">© {new Date().getFullYear()} EMSolution. All rights reserved.</p>
         </div>
       </div>
     </footer>

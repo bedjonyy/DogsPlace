@@ -85,7 +85,7 @@ export function ProductDetailPage() {
             </h1>
             <p className="font-display text-xl text-ceramic-500 mb-1">Dog Bowl</p>
             {product.customizable && (
-              <p className="font-display text-xl text-ceramic-500 mb-4">Custom Pet Trinket</p>
+              <p className="font-display text-xl text-ceramic-500 mb-4">Custom Bowl With Pet Name</p>
             )}
             <p className="text-xl font-medium text-ceramic-950 mb-4">{formatPrice(product.price, product.currency)}</p>
             <p className="font-handwritten italic text-lg text-ceramic-600 leading-relaxed mb-6 max-w-xs">

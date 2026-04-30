@@ -1,8 +1,6 @@
 /**
  * Shared TypeScript interfaces for the dogsplace. storefront.
  *
- * These types mirror the Shopify Storefront API data shapes so swapping
- * the mock constants for real API responses requires minimal changes.
  */
 
 export interface ProductVariant {

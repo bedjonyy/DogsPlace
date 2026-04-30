@@ -1,18 +1,6 @@
 /**
  * CartContext — shopping cart state via useReducer.
  *
- * useReducer is chosen over useState because:
- *   - All state transitions are pure (reducer returns a new object — no mutation)
- *   - Complex multi-field updates (add, remove, update qty, clear) stay readable
- *   - The reducer is easy to unit-test in isolation
- *
- * Derived values (count, total) are computed inline from state on each render
- * rather than stored redundantly in state — this prevents them from ever getting
- * out of sync with the items array.
- *
- * Shopify checkout integration point: when the user taps Checkout in CartSidebar,
- * pass this.items to the Shopify checkoutCreate mutation to get a webUrl,
- * then redirect the browser to that URL.
  */
 import { createContext, useContext, useReducer, type ReactNode } from 'react'
 import type { CartItem, Product } from '../types'

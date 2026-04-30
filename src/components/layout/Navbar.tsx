@@ -1,20 +1,6 @@
 /**
  * Navbar — fixed site header.
  *
- * Visual behaviour:
- *   - On the home page: starts transparent over the full-screen hero, switches to
- *     solid ceramic-50 once the user scrolls past 40px (threshold avoids a flash at 0).
- *   - On all other pages: always solid ceramic-50 from the top so links are readable
- *     against light page backgrounds.
- *   - Link and icon colours invert with the background (white on hero, dark otherwise).
- *
- * Mobile menu:
- *   - Rendered via AnimatePresence with a height animation below the main bar.
- *   - aria-expanded on the hamburger button tells screen readers the menu state.
- *
- * Cart badge:
- *   - Shows the total item count (not unique products) so 2×Product A reads as "2".
- *   - aria-label on the cart button includes the count for screen reader users.
  */
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
